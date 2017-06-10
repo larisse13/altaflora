@@ -92,13 +92,14 @@ $(document).ready(function() {
     }
 
     function reset(){
-        $('#save').attr('disabled', 'disabled');
-        $('#create').removeAttr('disabled');
-        $('#cancel').attr('disabled', 'disabled');
+      //  $('#save').attr('disabled', 'disabled');
+      //  $('#create').removeAttr('disabled');
+      //  $('#cancel').attr('disabled', 'disabled');
 
         path = new google.maps.MVCArray;
         poly.setPaths(new google.maps.MVCArray([path]));
         deleteMarkers();
+        initialize();
     }
 
     $('#create').click(function(){
