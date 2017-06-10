@@ -1,0 +1,26 @@
+!!! 5
+html(lang=en)
+    head
+        title MyAreas
+        meta(name="viewport", content="initial-scale=1.0, user-scalable=no")
+        meta(charset='utf-8')
+        link(rel="stylesheet", href="#{STATIC_URL}css/bootstrap.css")
+        script(src="http://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous")
+        script(src="#{STATIC_URL}js/underscore-min.js")
+        block styles
+        block scripts
+    body
+        nav.navbar.navbar-inverse
+            .container-fluid
+                .navbar-header
+                    a.navbar-brand.console(href="#") Altaflora Jr.
+                .collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            a(href='#')#username #{username}
+
+        block content
+        block scripts_footer

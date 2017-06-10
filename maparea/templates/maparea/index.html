@@ -1,0 +1,315 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+	<![endif]-->
+	<!--[if IE 7]>
+	<html class="no-js lt-ie9 lt-ie8">
+		<![endif]-->
+		<!--[if IE 8]>
+		<html class="no-js lt-ie9">
+			<![endif]-->
+			<!--[if gt IE 8]><!-->
+			<html class="no-js">
+				<!--<![endif]-->
+				<head>
+					<meta charset="utf-8">
+					<title>Altaflora Jr. | Projetos e Consultoria Florestal</title>
+					<meta name="description" content="">
+					<meta name="viewport" content="width=device-width, initial-scale=1">
+					<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+					<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500,500italic,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+					<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+					<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+					<link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
+					<link rel="stylesheet" href="{% static 'css/jquery.tweet.css' %}">
+					<link rel="stylesheet" href="{% static 'css/walam.css' %}">
+				</head>
+				<body>
+					<!-- PRELOADER -->
+					<div class="preloader"></div>
+					<!-- /PRELOADER -->
+					<div data-spy="affix" id="dot-nav">
+						<ul>
+							<li class="awesome-tooltip active" title="Home"><a href="#home"></a></li>
+							<li class="awesome-tooltip" title="Serviços"><a href="#services"></a></li>
+						<!--	<li class="awesome-tooltip" title="Sobre"><a href="#about"></a></li>-->
+							<li class="awesome-tooltip" title="Mapa"><a href="#map"></a></li>
+							<li class="awesome-tooltip" title="Contato"><a href="#contact"></a></li>
+						</ul>
+					</div>
+					<div id="home"></div>
+					<section class="main">
+						<div class="overlay"></div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3">
+									<div class="logo"><img src="{% static 'img/logo2.png' %}" alt="logo" class="img-responsive center-block" width="250px" /></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="welcome-message text-center">
+										<br>
+										<h1>Estaremos disponível em: </h1>
+									</div>
+
+									<script>
+										// Set the date we're counting down to
+										var countDownDate = new Date("Oct 7, 2017 15:37:25").getTime();
+
+										// Update the count down every 1 second
+										var x = setInterval(function() {
+
+										  // Get todays date and time
+										  var now = new Date().getTime();
+
+										  // Find the distance between now an the count down date
+										  var distance = countDownDate - now;
+
+										  // Time calculations for days, hours, minutes and seconds
+										  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+										  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+										  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+										  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+										  // Display the result in the element with id="demo"
+										  document.getElementById("days").innerHTML = days;
+											document.getElementById("hours").innerHTML = hours;
+											document.getElementById("minutes").innerHTML = minutes;
+											document.getElementById("seconds").innerHTML = seconds;
+
+										  // If the count down is finished, write some text
+										  if (distance < 0) {
+										    clearInterval(x);
+										    document.getElementById("countdown").innerHTML = "EXPIRED";
+										  }
+										}, 1000);
+									</script>
+
+									<div id="days"></div>
+									<div id="hours"></div>
+									<div id="minutes"></div>
+									<div id="seconds"></div>
+
+
+									<ul class="countdown text-center">
+										<li>
+											<p class="days_ref">dias</p>
+										</li>
+										<li>
+											<p class="hours_ref">horas</p>
+										</li>
+										<li>
+											<p class="minutes_ref">minutos</p>
+										</li>
+										<li>
+											<p class="seconds_ref">segundos</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="services">
+						<div class="container">
+							<div class="row">
+								<h2 align="center">Nossos <span>Serviços</span></h2>
+								<div class="col-sm-6 col-md-6">
+									<div class="service-block">
+										<div class="services_box_left">
+											<i class="fa fa-wrench"></i>
+										</div>
+										<div class="services_box_right">
+											<h3 >Manejo</h3>
+											<p align="justify">Consultoria em inventários de florestas plantadas e nativas, recomendação de desbaste e georreferenciamento.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<div class="service-block">
+										<div class="services_box_left">
+											<i class="fa fa-tree"></i>
+										</div>
+										<div class="services_box_right">
+											<h3 >Silvicultura </h3>
+											<p align="justify"> Implantação de florestas, solos, nutrição e assistência técnica florestal, dentre outros.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<div class="service-block">
+										<div class="services_box_left">
+											<i class="fa fa-mobile"></i>
+										</div>
+										<div class="services_box_right">
+											<h3 >Tecnologia</h3>
+											<p align="justify">Práticas em preservação da madeira, rendimento de serraria, anatomia e identificação de produtos florestais. </p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<div class="service-block">
+										<div class="services_box_left">
+											<i class="fa fa-leaf"></i>
+										</div>
+										<div class="services_box_right">
+											<h3 >Meio Ambiente</h3>
+											<p>Avaliação de impactos ambientais, proteção contra incêndios florestais, averbação de reserva legal, etc.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div id="social">
+						<div class="social-bg-overlay">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3 ">
+										<div class="walam-social">
+											<ul>
+												<li><a class="fa fa-facebook" href="#"></a></li>
+												<li><a class="fa fa-twitter" href="#"></a></li>
+												<li><a class="fa fa-google-plus" href="#"></a></li>
+												<li><a class="fa fa-linkedin" href="#"></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="col-md-8">
+
+							<h3 align="left">Usuário: <span>{{ username }}</span></h3>
+							<style type="text/css">
+
+							#create, #save {
+
+							  text-transform: uppercase;
+							  font-weight: 500;
+							  font-size: 14px;
+							  letter-spacing: 1px;
+							  display: inline-block;
+							  padding: 4px 10px;
+							  border-radius: 2px;
+							  transition: 0.5s;
+							  border: 2px solid #58B325;
+							  color: #58B325;
+							  background-color: white;
+								margin-top: -50px;
+								margin-bottom: 10px;
+							}
+
+							#save {
+								margin-left: 100px;
+							}
+
+							#create {
+								margin-left: 300px;
+							}
+
+							#create:hover, #save:hover {
+
+							  background: #58B325;
+							  color: #fff;
+							  border: 2px solid #fff;
+
+							}
+							h3 {
+								
+								display: inline-block;
+							}
+
+							</style>
+							{% if username == "admin" %}
+							<div id="create" align="center">Criar área</div>
+							<div id="save" align="right">Salvar</div>
+							{% endif %}
+						</div>
+						<div class="col-md-4">
+							<h3 align="right">Fazer <span><a href="{% url 'maparea:logout' %}"> Logout</a></span></h3>
+						</div>
+					</div>
+					<div class="col-md-12">
+							<div id="map">
+							</div>
+					</div>
+				<	<section id="contact" class="pad-top-100 pad-bot-30">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<form name="sentMessage" id="contactForm" novalidate>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Nome*" id="name" required data-validation-required-message="Informe seu nome, por favor.">
+													<p class="help-block text-danger"></p>
+												</div>
+												<div class="form-group">
+													<input type="email" class="form-control" placeholder="E-mail *" id="email" required data-validation-required-message="Por favor, adicione seu endereço de e-mail.">
+													<p class="help-block text-danger"></p>
+												</div>
+												<div class="form-group">
+													<input type="tel" class="form-control" placeholder="Telefone *" id="phone" required data-validation-required-message="Insira um telefone válido.">
+													<p class="help-block text-danger"></p>
+												</div>
+											</div>
+											<div class="col-md-6 ">
+												<div class="form-group">
+													<textarea class="form-control" placeholder="Mensagem *" id="message" required data-validation-required-message="Por favor, digite sua mensagem."></textarea>
+													<p class="help-block text-danger"></p>
+												</div>
+												<div id="success"></div>
+												<button type="submit" class="contact">Enviar Mensagem</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="col-md-4">
+									<h3>Nosso <span>Endereço</span></h3><br/>
+									<p>
+										Avenida Brigadeiro Eduardo Gomes, <br/>
+										Explanada do Xingu, Altamira-PA. <br/>
+										Anexo I, Faculdade de Engenharia Florestal<br/>
+										Universidade Federal do Pará
+									</p>
+									<div class="contact-mobile">
+										<p> <span class="fa fa-mobile"></span>(93) 9148 - 7310</p>
+									</div>
+									<div class="contact-email">
+										<p><span class="fa fa-envelope-o"></span>altaflorajr@yahoo.com.br</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="footer">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 text-center">
+									<p> Copyright &copy; 2017 <bold> Altaflora Jr.</bold></p>
+									<p> Powered by <bold><a href="http://www.ejectufrn.com.br" target="blank">EJECT</a></bold></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script src="{% static 'js/jquery-1.12.1.min.js'%}"></script>
+					<script src="{% static 'js/bootstrap.min.js' %}"></script>
+					<script src="{% static 'js/jquery.countdown.js' %}"></script>
+					<script src="{% static 'js/lightbox.min.js' %}"></script>
+					<script src="{% static 'js/tweetie.min.js' %}"></script>
+					<script src="{% static 'js/contact_process.js' %}"></script>
+					<script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+					<!--<script src="{% static 'js/jquery.map.js' %}"></script>-->
+					<script src="{% static 'js/main.js' %}"></script>
+					<script src="{% static 'js/map.js' %}"></script>
+					<!--<script src="http://code.jquery.com/jquery-1.12.4.min.js"
+	  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	  crossorigin="anonymous"></script>-->
+	        <script src="{% static 'js/underscore-min.js' %}"> </script>
+					<script src='https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAWx1MlHbx5a--Mq4PUYIMSJWD9zkmsRS4'></script>
+				</body>
+			</html>

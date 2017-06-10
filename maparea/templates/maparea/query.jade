@@ -1,0 +1,22 @@
+extends maparea/layout
+block styles
+    link(rel="stylesheet", href="#{STATIC_URL}css/main.css")
+block scripts
+    script(src='https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAWx1MlHbx5a--Mq4PUYIMSJWD9zkmsRS4')
+block scripts_footer
+    script(src="#{STATIC_URL}js/query.js")
+block content
+    .container-fluid
+        .row
+            .col-md-2
+                .panel.panel-warning
+                    .panel-heading
+                        p
+                            strong check your points
+                    .panel-body
+                        p
+                            | Here you can verify if a given point belong to any area
+                            | Just click the map and check this out.
+            .col-md-10
+                .jumbotron
+                    div#map-canvas
