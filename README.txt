@@ -6,5 +6,5 @@
 
 #3 se o wsgiref não passar, é só ir no pipy e baixar a versão do arquivo( que a desse projeto é a última, atualmente), e inserir na pasta de env. ####não precisa soltar dentro de uma subpasta da env.
 
-4#
+4# [BUG FIREFOX/EDGE - OK] Nos testes iniciais a partir do commit #04 já foi possível exibir e inserir polígonos no Chrome, Edge e Firefox.
 
