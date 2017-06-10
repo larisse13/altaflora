@@ -20,11 +20,10 @@ $(document).ready(function() {
         poly.setPaths(new google.maps.MVCArray([path]));
 
         //add the preexistent polygons
-        var username = $('#username').text();
         console.info("username: " + username);
-        $.getJSON('/maparea/'+ username, function(data){
+        $.getJSON('/maparea/admin', function(data){
             for(var i in data){
-                console.info(i.text());
+                //console.info(i.text());
                 var coords = [];
                 for (var j in data[i].locations){
                     console.info("location" + JSON.stringify(data[i].locations[j]));
@@ -35,11 +34,11 @@ $(document).ready(function() {
                 new google.maps.Polygon({
                     map: map,
                     paths: coords,
-                    strokeColor: '#FF0000',
+                    strokeColor: '#58B325',
                     strokeOpacity: 0.8,
                     strokeWeight: 2,
-                    fillColor: '#FF0000',
-                    fillOpacity: 0.35,
+                    fillColor: '#58B325',
+                    fillOpacity: 0.6,
                     draggable: false,
                     geodesic: true
                 });
